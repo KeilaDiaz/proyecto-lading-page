@@ -1,3 +1,9 @@
+/* variable */
+:root {
+    --background: white; 
+    --primary: #d4a373;
+    --secondary: #faedcd;
+}
 * {
     margin: 0;
     padding: 0;
@@ -38,3 +44,73 @@ header {
     color: var(--text-black);
     font-size: 14px;
 }
+
+/* Main */
+body {
+    background: var(--background);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+}
+ 
+#hero {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.hero-info p {
+    font-size: 14px;
+    width: 300px;
+    color: rgb(27, 27, 27);
+}
+
+.hero-info a {
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+
+}
+.hero-card {
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    color: rgb(27, 27, 27);
+    width: 550px;
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+
